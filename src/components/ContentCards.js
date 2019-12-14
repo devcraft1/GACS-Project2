@@ -18,7 +18,7 @@ function ContentCards(props) {
             </div>
             <div className="card-content">
               <div className="content">
-                <h4>{item.title}</h4>
+                <h6>{item.title}</h6>
                 <p>{item.body}</p>
               </div>
             </div>

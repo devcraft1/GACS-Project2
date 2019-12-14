@@ -3,8 +3,9 @@ import IndexPage from "./index";
 import { Switch, Route, Router } from "./../util/router.js";
 import { ProvideAuth } from "./../util/auth.js";
 import AboutPage from '../components/AboutPage'
-import TechTeamSection from "../components/TechTeamSection";
-import Contact from "../components/Contact";
+import StatesSection from "../components/StatesSection";
+import Register from "../components/Register";
+import ContactUs from "../components/ContactUs";
 
 
 function App() {
@@ -13,8 +14,11 @@ function App() {
       <Router>
         <Switch>
           <Route exact path="/" component={IndexPage} />
+          <Route exact path="/home" component={IndexPage} />
           <Route exact path="/about" component={AboutPage} />
-          <Route exact path="/leadership" component={TechTeamSection} />
+          <Route exact path="/register" component={Register} />
+          <Route exact path="/states" component={StatesSection} />
+          <Route exact path="/contactus" component={ContactUs} />
           {/* <Route exact path="/contact" component={Contact} /> */}
           <Route
             component={({ location }) => {

@@ -1,17 +1,16 @@
 
-// body {
-//     background-color: #000;
-//   }
+.Slide{
   
 #landing-header {
-    // z-index: 1;
+    z-index: 1;
     // position: absolute;
     display: flex;
     // align-items: center;
+    // justify-content: center;
     // align-content: center;
     text-align: center;
-    // padding-top: 10vh;
-    height: 80vh;
+    padding-top: 10vh;
+    height: 50vh;
   }
 
   .slideshow{
@@ -29,7 +28,7 @@
     height: 100%;
     top: 0;
     left: 0;
-    // z-index: 0;
+    z-index: 1;
     list-style: none;
     margin: 0;
     padding: 0;
@@ -43,7 +42,7 @@
     left: 0;
     background-size: cover;
     text-align: center;
-    // background-position: 2% 2%;
+    background-position: 5% 50%;
     background-position: center;
     background-repeat: no-repeat;
     opacity: 0;
@@ -94,3 +93,4 @@
       opacity: 1;
      
   }
+}

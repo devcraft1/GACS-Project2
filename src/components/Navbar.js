@@ -1,19 +1,19 @@
 import React, { useState } from "react";
 import NavbarContainer from "./NavbarContainer";
-import { Link, useRouter } from "./../util/router.js";
-import SectionButton from "./SectionButton";
-import { useAuth } from "./../util/auth.js";
-import "./Navbar.scss";
+import { Link } from "./../util/router.js";
+// import { useRouter } from "./../util/router.js";
+// import SectionButton from "./SectionButton";
+// import { useAuth } from "./../util/auth.js";
+// import "./Navbar.scss";
 
 function Navbar(props) {
-  const auth = useAuth();
-  const router = useRouter();
+  // const auth = useAuth();
+  // const router = useRouter();
   const [menuOpen, setMenuOpen] = useState(false);
 
   return (
-    <div className="set">
       <NavbarContainer spaced={props.spaced} color={props.color}>
-        <div className="container">
+        <div className="container" style={{fontWeight:'500'}}>
           <div className="navbar-brand">
             <div className="navbar-item">
               <Link to="/">
@@ -33,6 +33,9 @@ function Navbar(props) {
           </div>
           <div className={"navbar-menu" + (menuOpen ? " is-active" : "")}>
             <div className="navbar-end">
+            <Link className="navbar-item" to="/home">
+                Home
+              </Link>
               <Link className="navbar-item" to="/about">
                 About
               </Link>
@@ -44,10 +47,13 @@ function Navbar(props) {
               >
                 Blog
               </a>
-              <Link className="navbar-item" to="/leadership">
-                Leaders
+              <Link className="navbar-item" to="/register">
+               Register
               </Link>
-              <Link className="navbar-item" to="/contact">
+              <Link className="navbar-item" to="/states">
+                States
+              </Link>
+              <Link className="navbar-item" to="/contactus">
               contact us
             </Link>
 
@@ -96,7 +102,6 @@ function Navbar(props) {
           </div>
         </div>
       </NavbarContainer>
-    </div>
   );
 }
 

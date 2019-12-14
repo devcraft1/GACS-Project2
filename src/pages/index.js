@@ -1,69 +1,91 @@
 import React from "react";
 import Navbar from "./../components/Navbar";
 import HeroSection from "./../components/HeroSection";
+import HeroSection1 from "./../components/HeroSection1";
 import FeaturesSection from "./../components/FeaturesSection";
 import VideoSection from "./../components/VideoSection";
 import ContentCardsSection from "./../components/ContentCardsSection";
 import TeamBiosSection from "./../components/TeamBiosSection";
 import Footer from "./../components/Footer";
 import { useRouter } from "./../util/router.js";
-import Slide from "../components/Slide";
-import TechTeamSection from "../components/TechTeamSection";
-import './index.scss'
+// import Slide from "../components/Slide";
+import ContactSection from "./../components/ContactSection";
 
 function IndexPage(props) {
   const router = useRouter();
 
   return (
     <>
-      <div className="all">
-        <Navbar
-          color="success"
-          spaced={true}
-          logo="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTRokX2SOtVrLxNQTs-DIA9cxinfJ2FMbfp_ASnjurzGsevTylX&s"
-        />
-        <Slide />
+      <Navbar color="info" spaced={true} logo="/image/gacs.jpeg" />
 
-        <HeroSection
-          color="light"
-          size="medium"
-          subtitle=""
-          image="/image/dennis.jpg"
-          title="Graduates of Agriculture Cooperative Society"
-          logo="/image/gacs.jpeg"
-          motto="Repositioned to feed the nation"
-        />
+      {/* <Slide /> */}
 
-        <FeaturesSection color="success" size="medium" title="" subtitle="" />
+      <HeroSection1
+        color="warning"
+        size="medium"
+        title="Welcome to Graduates of Agriculture Cooporative Society Online Platform"
+        subtitle="The home of Agriculture Graduates and like minds"
+        buttonText="Become a member"
+        image="/image/hd1.jpg"
+        buttonOnClick={() => {
+          router.push("/register");
+        }}
+      />
 
-        <VideoSection
-          color="light"
-          size="medium"
-          title="Youths in agriculture"
-          subtitle=""
-          embedUrl="https://www.youtube.com/embed/E1NGLbjxBa8"
-        />
+      <HeroSection
+        color="light"
+        size="medium"
+        title="BRIEF HISTORY"
+        subtitle=""
+        image="/image/dennis.jpg"
+        // title="Graduates of Agriculture Cooperative Society"
+        logo="/image/gacs.jpeg"
+        motto="Repositioned to feed the nation"
+      />
 
-        <TeamBiosSection
-          color="white"
-          size="medium"
-          title="Meet an Agriculturist"
-          subtitle=""
-        />
-        <ContentCardsSection
-          color="success"
-          size="medium"
-          title="Global News"
-          subtitle=""
-        />
+      <FeaturesSection
+        color="warning"
+        size="medium"
+        title=""
+        subtitle="OUR PHILOSOPHY"
+      />
 
-        <Footer
-          color="light"
-          size="medium"
-          logo="/image/gacs.jpeg"
-          description="Repositioned to feed the nation"
-        />
-      </div>
+      <VideoSection
+        color="light"
+        size="medium"
+        title=""
+        subtitle="YOUTH IN AGRICULTURE"
+        embedUrl="https://www.youtube.com/embed/E1NGLbjxBa8"
+      />
+
+      <TeamBiosSection
+        color="white"
+        size="medium"
+        title=""
+        subtitle="MEET AN AGRICULTURIST"
+      />
+      <ContentCardsSection
+        color="warning"
+        size="medium"
+        title=""
+        subtitle="GLOBAL NEWS"
+      />
+
+      <ContactSection
+        color="light"
+        size="medium"
+        title=""
+        subtitle="CONTACT US"
+        showNameField={true}
+        buttonText="Send message"
+      />
+
+      <Footer
+        color="info"
+        size="medium"
+        logo="/image/gacs.jpeg"
+        description="Repositioned to feed the nation"
+      />
     </>
   );
 }

@@ -32,17 +32,18 @@ function Footer(props) {
           <div className="column is-7 is-6-widescreen is-offset-2-widescreen">
             <div className="columns">
               <div className="column is-4">
-                {/* <div className="menu">
-                  <p className="menu-label">Product</p>
-                  <ul className="menu-list">
+                <div className="menu">
+                  <p className="menu-label">Headquaters</p>
+                  <p>No 12 Estate Abuja Nigeria</p>
+                  {/* <ul className="menu-list">
                     <li>
                       <Link to="/pricing">Pricing</Link>
                     </li>
                     <li>
                       <Link to="/faq">FAQ</Link>
                     </li>
-                  </ul>
-                </div> */}
+                  </ul> */}
+                </div>
               </div>
               <div className="column is-4">
                 <div className="menu">

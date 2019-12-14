@@ -22,7 +22,6 @@ function SectionButton(props) {
           "danger",
           "black",
           "dark",
-          "agric3",
         ].includes(parentColor)
           ? ` is-${parentColor} is-inverted`
           : "") +

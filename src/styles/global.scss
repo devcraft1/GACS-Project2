@@ -1,23 +1,23 @@
 @charset "utf-8";
-@import url('https://fonts.googleapis.com/sass?family=Open+Sans&display=swap');
-
 
 // COLORS
 $primary: #00d1b2;
-$info: #209CEE;
+$info: rgba(79, 160, 25, 0.918);
 $success: #23D160;
-$warning: #FFDD57;
+$warning: rgb(230, 226, 215);
 $danger: #FF3860;
 $light: #F5F5F5;
-$dark: #363636;
-$agric1:#34495E;
-$agric2:#AAB7B8;
-$agric3:#27AE60; 
+$dark: #363636; 
+
 // TEXT
 $text: #4A4A4A;
 $link: #3273DC;
 
-$body-family: 'Open Sans', sans-serif;
+// $body-family:'sans-serif';
+// $body-family:'monospace';
+$body-family:'Open Sans';
+// $body-family: 'Calibri';
+$body-family:'cursive';
 
 
 // $body-family:Franklin Gothic Medium, Arial Narrow, Arial, sans-serif;
@@ -35,9 +35,9 @@ $widescreen-enabled: true;
 $fullhd-enabled: false;
 
 // LAYOUT
-$section-padding: 3rem 1.5rem;
-$section-padding-medium: 6rem 1.5rem;
-$section-padding-large: 9rem 1.5rem;
+$section-padding: 1rem 1.5rem;
+$section-padding-medium: 3rem 1.5rem;
+$section-padding-large: 6rem 1.5rem;
 
 // SEE DOCS FOR MORE:
 // https://bit.ly/30UvE5O
@@ -48,25 +48,9 @@ $section-padding-large: 9rem 1.5rem;
 // IMPORT FONT AWESOME
 @import url("https://use.fontawesome.com/releases/v5.10.1/css/all.css");
 
-@import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
 
 
 // Google Fonts
-@import url(http://fonts.googleapis.com/css?family=Roboto+Slab|Open+Sans:400italic,700italic,400,700);
+@import url('https://fonts.googleapis.com/sass?family=Open+Sans&display=swap');
 
-// Font Variables
-$roboto-slab: 'Roboto Slab', serif;   
-$open-sans: 'Open Sans', sans-serif;
-
-// // Styles
-// body {
-//   font-family: $body-font;
-//   font-weight: normal;
-// }
-// h1, h2, h3, h4, h5, h6 {
-//   font-family: $header-font;
-//   font-weight: normal;
-// }
-
-// .button {
-//   font-family: $roboto-slab;
+@import url('https://fonts.googleapiscom./css?family=Open+Sans&display=swap');

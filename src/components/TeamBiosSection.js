@@ -11,7 +11,7 @@ function TeamBiosSection(props) {
           title={props.title}
           subtitle={props.subtitle}
           centered={true}
-          size={3}
+          size={4}
         />
         <TeamBios
           people={[

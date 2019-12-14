@@ -1,6 +1,7 @@
 .SectionHeader {
   &__header {
     margin-bottom: 3rem;
+    font-family: cursive;
 
     // Remove margin if nothing after header
     &:last-child {
@@ -12,11 +13,16 @@
       text-align: center;
     }
 
+    .title{
+      font-family:cursive;
+    }
+
     .subtitle {
       max-width: 700px;
       // So we can have max-width but still
       // have alignment controlled by text-align.
       display: inline-block;
+      font-family: cursive;
     }
   }
 }

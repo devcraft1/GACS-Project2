@@ -12,7 +12,7 @@ function VideoSection(props) {
           title={props.title}
           subtitle={props.subtitle}
           centered={true}
-          size={2}
+          size={4}
         />
         <VideoEmbed url={props.embedUrl} />
       </div>

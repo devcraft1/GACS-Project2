@@ -11,33 +11,33 @@ function FeaturesSection(props) {
           title={props.title}
           subtitle={props.subtitle}
           centered={true}
-          size={3}
+          size={4}
         />
         <Features
           items={[
             {
-              title: "Vision",
+              // title: "Vision driven",
               description:
-                "developing content",
+                "Research and technology to feed Nigerian society",
               image: "/image/vegetables.jpg"
             },
             {
-              title: "Mission",
+              // title: "Mission",
               description:
-                "developing content",
+                "cutting across all state in Nigeria",
               image:
                 "/image/apple.jpeg"
             },
             {
-              title: "Philosophy",
+              // title: "Goal",
               description:
-                "developing content.",
+                "Improving Nigerian's Agriculture systems",
               image: "/image/wheat.jpg"
             },
             {
-              title: "Target",
+              // title: "Focus",
               description:
-                "developing content",
+                "Establishing graduates with Agricultural jobs",
               image: "/image/forestry.jpg"
             }
           ]}

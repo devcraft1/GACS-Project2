@@ -1,39 +1,54 @@
 import React from "react";
 import Navbar from "./../components/Navbar";
-import VideoSection from "./../components/VideoSection";
+import SectionHeader from "./SectionHeader";
+// import VideoSection from "./../components/VideoSection";
 import Footer from "./../components/Footer";
 import { useRouter } from "./../util/router.js";
-import './AboutPage.scss'
+import "./AboutPage.scss";
 
-
-
-function IndexPage(props) {
+function AboutPage(props) {
   const router = useRouter();
 
   return (
     <>
       <Navbar
-        color="success"
+        color="info"
         spaced={true}
-        logo="/image/back.png"
+        logo="/image/gacs.jpeg"
         buttonOnClick={() => {
-          router.push("/indexpage");
+          router.push("/AboutPage");
         }}
       />
-      <div className="ab">
-      <div style={{fontSize:30, textAlign:"center"}}>
-          <h1 style={{ marginBottom:150, marginTop:150}}>COMING SOON!</h1>
-      </div>
+      <div className="column">
+        <SectionHeader title="BRIEF HISTORY" size={4} />
+        <p className="HeroSection__image image">
+          Gacs started under the leadership of Comr. Iregebu Frank in 2019.This
+          vision was engineered to revolutionize the agricultural Sector to feed
+          the nation. ... Gacs started under the leadership of Comr. Iregebu
+          Frank in 2019.This vision was engineered to revolutionize the
+          agricultural Sector to feed the nation. ... Gacs started under the
+          leadership of Comr. Iregebu Frank in 2019.This vision was engineered
+          to revolutionize the agricultural Sector to feed the nation. ... Gacs
+          started under the leadership of Comr. Iregebu Frank in 2019.This
+          vision was engineered to revolutionize the agricultural Sector to feed
+          the nation. ...
+        </p>
+
+        <p className="HeroSection__image image">
+          <h1 className="h1">Comr. Frank Iregbu, National coordinator GACS</h1>
+        </p>
       </div>
 
-      <Footer
-        color="light"
-        size="medium"
-        logo="/image/gacs.jpeg"
-        description="Repositioned to feed the nation"
-      />
+      <div className="FooterHeight">
+        <Footer
+          color="info"
+          size="medium"
+          logo="/image/gacs.jpeg"
+          description="Repositioned to feed the nation"
+        />
+      </div>
     </>
   );
 }
 
-export default IndexPage;
+export default AboutPage;

@@ -1,24 +1,33 @@
 .TeamBios {
   &__card {
     flex-direction: column;
-    font-weight: 900;
+    font-weight: 300;
+    font-family: cursive;
+
   }
 
   &__card-content {
     flex-direction: column;
     height: 100%;
     padding: 1.8rem;
+    
+
   }
 
   &__avatar-wrapper {
     margin: 0 auto;
+
   }
 
   &__details {
     margin-top: 20px;
+    font-family: cursive;
   }
 
   &__bio {
     margin-top: 20px;
+    
+
   }
+
 }

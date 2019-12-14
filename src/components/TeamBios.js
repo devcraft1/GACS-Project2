@@ -14,7 +14,7 @@ function TeamBios(props) {
           <div className="TeamBios__card card is-flex">
             <div className="TeamBios__card-content card-content is-flex has-text-centered">
               <div className="TeamBios__avatar-wrapper">
-                <Avatar image={person.avatar} alt={person.name} style={{width:150,height:150,fontweight:900}}/>
+                <Avatar image={person.avatar} alt={person.name} style={{width:150,height:150}}/>
               </div>
               <div className="TeamBios__details">
                 <p className="is-size-5">{person.name}</p>

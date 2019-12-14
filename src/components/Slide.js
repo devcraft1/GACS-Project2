@@ -1,16 +1,14 @@
 import React from "react";
-import Section from "./Section";
-import SectionHeader from "./SectionHeader";
+// import Section from "./Section";
+// import SectionHeader from "./SectionHeader";
 import "./Slide.scss";
-import CenteredColumns from "./CenteredColumns";
+// import CenteredColumns from "./CenteredColumns";
 
-function Slide() {
+function Slide(props) {
   return (
-    <Section >
-    <CenteredColumns>
     <div className="container">
       {/* <div className="columns is-vcentered is-desktop"> */}
-      {/* <div className="column is-5-desktop has-text-centered-touch"> */}
+      <div className="column is-5-desktop has-text-centered-touch">
       <div id="landing-header">
         <ul class="slideshow">
           <li></li>
@@ -19,12 +17,10 @@ function Slide() {
           <li></li>
           <li></li>
         </ul>
-        {/* </div> */}
-        {/* </div> */}
-      </div>
+        </div>
+        </div>
+      {/* </div> */}
     </div>
-    </CenteredColumns>
-    </Section>
   );
 }
 

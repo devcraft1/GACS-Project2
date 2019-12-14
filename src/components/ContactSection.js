@@ -12,7 +12,7 @@ function ContactSection(props) {
           title={props.title}
           subtitle={props.subtitle}
           centered={true}
-          size={3}
+          size={4}
         />
         <Contact
           parentColor={props.color}
